@@ -1,0 +1,40 @@
+/* Add your styles for layout and appearance here */
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Regular", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(235, 18%, 26%);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 25px;
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+.success-message {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
