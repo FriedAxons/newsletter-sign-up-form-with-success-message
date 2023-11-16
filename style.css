@@ -20,7 +20,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 20px 60px;
   background-color: white;
   border-radius: 25px;
   max-width: 900px; /* Adjust max-width as needed */
@@ -33,9 +33,9 @@ main {
 
 h1 {
   font-size: 54px;
-  font-weight: 700;
+  font-weight: bolder;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .sub-header {
@@ -70,7 +70,7 @@ ul {
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  padding: 0px 55px 0px 0px;
+  /* padding: 0px 45px 0px 0px; */
 }
 
 .newsletter-form label {
@@ -85,10 +85,28 @@ ul {
   margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid hsl(231, 7%, 60%);
+  font-family: inherit;
+  font-size: 16px;
 }
 
 .newsletter-form input[type="email"]::placeholder {
   color: hsl(231, 7%, 60%);
+  padding-left: 10px;
+}
+
+button {
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.newsletter-image {
+  margin-left: 60px;
 }
 
 .success-message {
