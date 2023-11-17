@@ -32,8 +32,8 @@ main {
 }
 
 h1 {
-  font-size: 54px;
-  font-weight: bolder;
+  font-size: 58px;
+  font-weight: 1000;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -41,6 +41,7 @@ h1 {
 .sub-header {
   margin-bottom: 30px;
   color: hsl(234, 29%, 20%);
+  font-weight: 400;
 }
 
 p {
@@ -58,7 +59,7 @@ ul {
   align-items: center;
   margin-top: 5px;
   color: hsl(234, 29%, 20%);
-  font-weight: 700;
+  font-weight: bolder;
 }
 
 .checkmark {
@@ -91,7 +92,7 @@ ul {
 
 .newsletter-form input[type="email"]::placeholder {
   color: hsl(231, 7%, 60%);
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 button {
