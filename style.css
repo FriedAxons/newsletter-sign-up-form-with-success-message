@@ -71,13 +71,27 @@ ul {
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  /* padding: 0px 45px 0px 0px; */
+  position: relative;
 }
 
 .newsletter-form label {
   color: hsl(234, 29%, 20%);
   font-weight: 700;
   margin-top: 20px;
+}
+
+.error-message {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 260px;
+  width: 100%;
+  color: hsl(4, 100%, 67%);
+  font-weight: bold;
+  display: none;
+}
+
+.error-message.active {
+  display: block;
 }
 
 .newsletter-form input[type="email"] {
@@ -93,6 +107,10 @@ ul {
 .newsletter-form input[type="email"]::placeholder {
   color: hsl(231, 7%, 60%);
   padding-left: 8px;
+}
+
+input:focus {
+  outline: none;
 }
 
 button {
