@@ -68,16 +68,16 @@ ul {
   padding: 5px;
 }
 
+label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
 .newsletter-form {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.newsletter-form label {
-  color: hsl(234, 29%, 20%);
-  font-weight: 700;
-  margin-top: 20px;
 }
 
 .error-message {
@@ -102,19 +102,29 @@ ul {
   border: 1px solid hsl(231, 7%, 60%);
   font-family: inherit;
   font-size: 16px;
+  -webkit-appearance: none; /* WebKit/Blink browsers */
+  -moz-appearance: none; /* Gecko browsers */
+  appearance: none;
 }
 
-.newsletter-form input[type="email"]::placeholder {
-  color: hsl(231, 7%, 60%);
-  padding-left: 8px;
-}
-
-input:focus {
+.newsletter-form input[type="email"].invalid {
   outline: none;
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 50%, 87%, 0.5);
+  color: hsl(4, 100%, 67%);
+}
+
+.newsletter-form input[type="email"].invalid::placeholder {
+  color: rgba(255, 100, 100, 0.8);
+}
+
+.newsletter-form input:focus {
+  outline: solid 1px hsl(234, 29%, 20%);
 }
 
 button {
   background-color: hsl(234, 29%, 20%);
+  border: none;
   color: white;
   border-radius: 8px;
   font-family: inherit;
@@ -122,6 +132,10 @@ button {
   font-size: 16px;
   padding: 15px;
   cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4381, #ff6347);
 }
 
 .newsletter-image {
