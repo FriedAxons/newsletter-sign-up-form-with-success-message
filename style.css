@@ -145,9 +145,8 @@ button:hover {
 .success-message {
   display: none;
   background-color: white;
-  width: 43%;
-  height: 75%;
-  text-align: center;
+  width: 40%;
+  height: 80%;
   padding: 50px;
   border-radius: 30px;
 }
@@ -155,8 +154,10 @@ button:hover {
 .visible {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.success-message-header {
+  margin-bottom: 0;
 }
 
 footer {
