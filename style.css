@@ -144,6 +144,9 @@ button:hover {
 
 .success-message {
   display: none;
+  background-color: white;
+  width: 60%;
+  height: 70%;
 }
 
 footer {

@@ -2,7 +2,7 @@ const emailInput = document.getElementById("email");
 const subscribeBtn = document.getElementById("subscribeBtn");
 const errorMessage = document.querySelector(".error-message");
 const successMessage = document.querySelector(".success-message");
-const textContent = document.querySelector(".text-content");
+const mainContent = document.querySelector("main");
 const newsletterImage = document.querySelector(".newsletter-image");
 
 subscribeBtn.addEventListener("click", function (event) {
@@ -26,7 +26,7 @@ document
   .querySelector(".newsletter-form")
   .addEventListener("submit", function (event) {
     if (emailInput.checkValidity()) {
-      textContent.style.display = "none";
+      mainContent.style.display = "none";
       newsletterImage.style.display = "none";
       // The form is valid, show the success message
       successMessage.style.display = "block";
