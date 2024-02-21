@@ -29,7 +29,7 @@ document
       mainContent.style.display = "none";
       newsletterImage.style.display = "none";
       // The form is valid, show the success message
-      successMessage.style.display = "block";
+      successMessage.classList.toggle("visible");
     }
     event.preventDefault(); // Prevent the default form submission
   });
