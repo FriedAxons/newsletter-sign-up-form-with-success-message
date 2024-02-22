@@ -156,8 +156,15 @@ button:hover {
   flex-direction: column;
 }
 
+.success-icon-image { 
+  height: 55px;
+  width: 55px;
+  margin-bottom: 40px;
+}
+
 .success-message-header {
   margin-bottom: 0;
+  font-weight: 1000;
 }
 
 footer {
