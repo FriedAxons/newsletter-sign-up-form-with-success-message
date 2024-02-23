@@ -165,11 +165,17 @@ button:hover {
 
 .success-message-header {
   margin-bottom: 0;
-  font-weight: 1000;
+  font-weight: 600;
 }
 
 .success-message-p-text {
   margin: 20px 0px 40px;
+  line-height: 130%;
+}
+
+.email-address { 
+  color:hsl(234, 29%, 20%);
+  font-weight: bold;
 }
 
 footer {

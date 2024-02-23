@@ -5,6 +5,7 @@ const successMessage = document.querySelector(".success-message");
 const mainContent = document.querySelector("main");
 const newsletterImage = document.querySelector(".newsletter-image");
 
+
 subscribeBtn.addEventListener("click", function (event) {
   if (!emailInput.checkValidity()) {
     emailInput.classList.add("invalid");
@@ -25,6 +26,19 @@ emailInput.addEventListener("input", function () {
 document
   .querySelector(".newsletter-form")
   .addEventListener("submit", function (event) {
+    // Prevent the default form submission
+    /* 
+     You're telling the browser not to execute its default behavior associated with form submission. Instead, you can handle the form submission manually using JavaScript.
+    */
+    event.preventDefault();
+
+    // Get the entered email address from the input field
+    const enteredEmail = emailInput.value;
+
+    // Update the content of the email address span inside of the success message
+    const emailAddressSpan = document.querySelector(".email-address");
+    emailAddressSpan.textContent = enteredEmail;
+
     if (emailInput.checkValidity()) {
       mainContent.style.display = "none";
       newsletterImage.style.display = "none";
