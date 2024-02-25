@@ -188,6 +188,9 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+  main, .text-content {
+    box-sizing: border-box;
+  }
   
   main {
     flex-direction: column;
@@ -207,11 +210,11 @@ footer {
   }
 
   .newsletter-image {
+    overflow: visible;
     order: -1;
     width: 100%;
-    max-width: 100%;
-    height: 400px;
-    margin: 0;
+    height: auto;
+    margin: 0px 0px 20px;
   }
 
   footer {
