@@ -4,7 +4,17 @@ const errorMessage = document.querySelector(".error-message");
 const successMessage = document.querySelector(".success-message");
 const mainContent = document.querySelector("main");
 const newsletterImage = document.querySelector(".newsletter-image");
+const dismissButton = document.querySelector(".dismiss-button");
 
+dismissButton.addEventListener("click", () => {
+  // Remove the "visible" class from the success message to hide it
+  successMessage.classList.remove("visible");
+  // Show the original main content
+  mainContent.style.display = "flex";
+  newsletterImage.style.display = "block";
+  // Clear the value of the email input field
+  emailInput.value = "";
+});
 
 subscribeBtn.addEventListener("click", function (event) {
   if (!emailInput.checkValidity()) {
