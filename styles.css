@@ -240,6 +240,11 @@ footer {
     min-height: 100vh;
   }
 
+  .checkmark {
+    margin-bottom: 3px;
+    padding: 10px;
+  }
+
   footer {
     display: none;
   }
