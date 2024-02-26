@@ -55,5 +55,4 @@ document
       // The form is valid, show the success message
       successMessage.classList.toggle("visible");
     }
-    event.preventDefault(); // Prevent the default form submission
   });

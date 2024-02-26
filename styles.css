@@ -141,6 +141,7 @@ button:hover {
 }
 
 .newsletter-image {
+  background-image: url("./assets/images/illustration-sign-up-desktop.svg");
   margin-left: 60px;
 }
 
@@ -218,19 +219,20 @@ footer {
   }
 
   .newsletter-image {
+    background-image: url('./assets/images/illustration-sign-up-mobile.svg');
     order: -1;
     position: absolute;
     left: 0; 
     top: -180px;
     width: 100%;
-    height: 580px;
+    height: auto;
     margin: 0;
   }
 
   .error-message {
     font-size: 14px;
     position: absolute;
-    left: -62px;
+    left: -50px;
   }
 
   .success-message {
