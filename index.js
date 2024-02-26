@@ -37,9 +37,7 @@ document
   .querySelector(".newsletter-form")
   .addEventListener("submit", function (event) {
     // Prevent the default form submission
-    /* 
-     You're telling the browser not to execute its default behavior associated with form submission. Instead, you can handle the form submission manually using JavaScript.
-    */
+    // You're telling the browser not to execute its default behavior associated with form submission. Instead, you can handle the form submission manually using JavaScript.
     event.preventDefault();
 
     // Get the entered email address from the input field
