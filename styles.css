@@ -193,28 +193,37 @@ footer {
   }
   
   main {
+    position: relative;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    width: 100%;
     min-height: 100vh;
     border-radius: 0;
   }
 
   .text-content {
-    padding: 10px;
+    position: absolute;
+    margin: 25px 0px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
   }
 
   h1 {
     font-size: 42px;
     font-weight: 600;
+    /* margin: 0px 0px 50px; */
   }
 
   .newsletter-image {
-    overflow: visible;
     order: -1;
+    position: absolute;
+    left: 0; 
+    top: -180px;
     width: 100%;
-    height: auto;
-    margin: 0px 0px 20px;
+    height: 580px;
+    margin: 0;
   }
 
   footer {
