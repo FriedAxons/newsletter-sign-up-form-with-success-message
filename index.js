@@ -4,16 +4,27 @@ const errorMessage = document.querySelector(".error-message");
 const successMessage = document.querySelector(".success-message");
 const mainContent = document.querySelector("main");
 const newsletterImage = document.querySelector(".newsletter-image");
+const mobileNewsletterImage = document.querySelector(
+  ".mobile-newsletter-image"
+);
 const dismissButton = document.querySelector(".dismiss-button");
 
 dismissButton.addEventListener("click", () => {
   // Remove the "visible" class from the success message to hide it
   successMessage.classList.remove("visible");
-  // Show the original main content
-  mainContent.style.display = "flex";
-  newsletterImage.style.display = "block";
-  // Clear the value of the email input field
+
   emailInput.value = "";
+
+  if (window.innerWidth > 375) {
+    // Show the original main content for desktop version
+    mainContent.style.display = "flex";
+    newsletterImage.style.display = "block";
+    mobileNewsletterImage.style.display = "none";
+  } else {
+    mainContent.style.display = "flex";
+    newsletterImage.style.display = "none";
+    mobileNewsletterImage.style.display = "block";
+  }
 });
 
 subscribeBtn.addEventListener("click", function (event) {
