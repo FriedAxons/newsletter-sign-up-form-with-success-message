@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site URL: [GitHub Live Page](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-solution-9HkB8ThdZ5)
+- Live Site URL: [GitHub Live Page](https://friedaxons.github.io/newsletter-sign-up-form-with-success-message/)
 
 ### Built with
 
