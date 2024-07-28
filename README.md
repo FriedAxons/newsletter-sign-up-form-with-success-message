@@ -31,7 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Solution](assets/images/solution_screenshots/desktop_solution.png)
+![Desktop Active](assets/images/solution_screenshots/desktop_active.png)
+![Desktop Success](assets/images/solution_screenshots/desktop_success.png)
+![Mobile Solution](assets/images/solution_screenshots/mobile_solution.png)
+![Mobile Success](assets/images/solution_screenshots/mobile_success.png)
 
 ### Links
 
