@@ -41,12 +41,11 @@ h1 {
 
 .sub-header {
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 p {
   font-size: 16px;
-  font-weight: 400;
   color: hsl(235, 18%, 26%);
 }
 
@@ -58,15 +57,16 @@ ul {
 .list-item {
   display: flex;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   color: hsl(235, 18%, 26%);
-  font-weight: 600;
+  font-weight: 400;
+  text-align: left;
 }
 
 .checkmark {
   vertical-align: middle;
   margin-right: 10px;
-  padding: 5px;
+  padding: 5px 5px 5px 0px;
 }
 
 label {
@@ -145,12 +145,16 @@ button:hover {
   margin-left: 60px;
 }
 
+.mobile-newsletter-image {
+  display: none;
+}
+
 .success-message {
   display: none;
   background-color: white;
   width: 20%;
   height: 80%;
-  padding: 40px 60px 60px;
+  padding: 50px 55px 50px 50px;
   border-radius: 30px;
 }
 
@@ -159,7 +163,7 @@ button:hover {
   flex-direction: column;
 }
 
-.success-icon-image { 
+.success-icon-image {
   height: 60px;
   width: 55px;
   margin-bottom: 30px;
@@ -168,15 +172,17 @@ button:hover {
 .success-message-header {
   margin-bottom: 0;
   font-weight: 600;
+  font-size: 50px;
 }
 
 .success-message-p-text {
   margin: 20px 0px 40px;
   line-height: 150%;
+  font-size: 14px;
 }
 
-.email-address { 
-  color:hsl(234, 29%, 20%);
+.email-address {
+  color: hsl(234, 29%, 20%);
   font-weight: bold;
 }
 
@@ -190,10 +196,11 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
-  main, .text-content {
+  main,
+  .text-content {
     box-sizing: border-box;
   }
-  
+
   main {
     position: relative;
     flex-direction: column;
@@ -202,31 +209,40 @@ footer {
     width: 100%;
     min-height: 100vh;
     border-radius: 0;
+    z-index: 1;
   }
 
   .text-content {
     position: absolute;
     overflow: hidden;
     margin: 25px 0px;
-    padding: 20px;
+    padding: 0px 25px 0px 25px;
     bottom: 0;
     width: 100%;
   }
 
   h1 {
     font-size: 42px;
-    font-weight: 600;
+    font-weight: 700;
+    margin: 0px 0px 30px;
   }
 
   .newsletter-image {
-    background-image: url('./assets/images/illustration-sign-up-mobile.svg');
-    order: -1;
-    position: absolute;
-    left: 0; 
-    top: -180px;
+    display: none;
+  }
+
+  .mobile-newsletter-image {
+    display: block;
     width: 100%;
     height: auto;
-    margin: 0;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin: 0px;
+  }
+
+  .sub-header,
+  .list-item {
+    font-weight: 700;
   }
 
   .error-message {
@@ -235,12 +251,15 @@ footer {
     left: -50px;
   }
 
-  
   .checkmark {
     margin-bottom: 3px;
-    padding: 10px;
+    padding: 10px 5px 10px 0px;
   }
-  
+
+  form label {
+    font-size: 13px;
+  }
+
   .success-message {
     justify-content: center;
     width: 100%;
