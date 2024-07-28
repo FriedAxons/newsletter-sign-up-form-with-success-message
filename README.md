@@ -15,6 +15,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ## Overview
 
+Challenge was provided by Frontend Mentor. The goal is to make a version of the challenge design as closely as one can to the images provided in the design folder.
+
 ### The challenge
 
 Users should be able to:
@@ -33,16 +35,16 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Live Site URL: [GitHub Live Page](https://your-live-site-url.com)
 
 ### Built with
 
-- HTML 
+- HTML
 - CSS
 - JavaScript
 
 ## Author
 
 - GitHub - [FriedAxons](https://www.github.com/FriedAxons)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/FriedAxons)
+- Frontend Mentor - [@FriedAxons](https://www.frontendmentor.io/profile/FriedAxons)
